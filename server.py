@@ -1,6 +1,7 @@
 # server.py 
 import socket, pickle
-from PIL import ImageGrab
+from PIL import ImageGrab #for windows and mac system
+#import pyscreenshot as ImageGrab for linux system
 import cv2
 import numpy as np
 # create a socket object
