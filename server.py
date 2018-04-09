@@ -1,15 +1,15 @@
 # server.py 
 import socket, pickle
-from PIL import ImageGrab #for windows and mac system
-#import pyscreenshot as ImageGrab for linux system
+from PIL import ImageGrab
 import cv2
 import numpy as np
 # create a socket object
 serversocket = socket.socket(
 	        socket.AF_INET, socket.SOCK_STREAM) 
 
-# get local machine name
-host = socket.gethostname()                           
+# get local machine name                
+host = socket.gethostbyname( '0.0.0.0' )                           
+# host = '192.168.7.242'                         
 
 port = 9999                                           
 

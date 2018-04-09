@@ -6,8 +6,8 @@ import cv2
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) 
 
 # get local machine name
-host = socket.gethostname()                           
-
+# host = socket.gethostname()                           
+host = '192.168.7.242'
 port = 9999
 
 # connection to hostname on the port. 
