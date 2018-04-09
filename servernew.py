@@ -21,7 +21,7 @@ serversocket.listen(5)
 clientsocket,addr = serversocket.accept()                      
 try: 	
 	while True:
-		data = serversocket.recv(40960000)
+		data = clientsocket.recv(40960000)
 		printscreen_numpy = pickle.loads(data) 
 		# printscreen_numpy = np.array(printscreen_pil.getdata(),dtype='uint8')\
 		# .reshape((printscreen_pil.size[1],printscreen_pil.size[0],3))  

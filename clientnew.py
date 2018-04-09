@@ -1,13 +1,14 @@
 # client.py  
 import socket, pickle
+from PIL import ImageGrab
 import numpy as np
 import cv2
 # create a socket object
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) 
 
 # get local machine name
-# host = socket.gethostname()                           
-host = '192.168.0.102'
+host = socket.gethostname()                           
+#host = '192.168.0.102'
 port = 9999
 
 # connection to hostname on the port. 

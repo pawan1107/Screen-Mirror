@@ -6,8 +6,8 @@ serversocket = socket.socket(
 	        socket.AF_INET, socket.SOCK_STREAM) 
 
 # get local machine name
-# host = socket.gethostname()                           
-host = socket.gethostbyname( '0.0.0.0' )
+ host = socket.gethostname()                           
+#host = socket.gethostbyname( '0.0.0.0' )
 
 port = 9999                                           
 
