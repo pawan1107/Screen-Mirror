@@ -25,8 +25,7 @@ try:
 		printscreen_pil =  ImageGrab.grab() 
 		printscreen_numpy = np.array(printscreen_pil.getdata(),dtype='uint8').reshape((printscreen_pil.size[1],printscreen_pil.size[0],3))
 		data_string = pickle.dumps(printscreen_numpy)
-		clientsocket.sendall(data_string)
-		print("send")
+		clientsocket.sendall(data_string) 
 except Exception as e:
 	print(e)
 finally: 
